@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="nome">Nome:
+                <input type="text" name ="nome" id="nome">
+
+            </label>
+            <label for="Sobrenome">Sobrenome:
+                <input type="text" name ="sobrenome" id="Sobrenome"  size="20" maxlength="20" required readonly>
+            </label>
+    
+        
+        <input type="submit" value="Enviar dados">
+        </p>
+    </form>
+    <form action="" method="post">
+        <p>
+        <form   action="" method="get">
+        <p>
+            <label for="nome">Nome:
+                <input type="text" name ="nome" id="nome">
+
+            </label>
+            <label for="Sobrenome">Sobrenome:
+                <input type="text" name ="sobrenome" id="Sobrenome"  size="20" maxlength="20" required>
+            </label>
+            <label for="telefone">Telefone:
+                <input type="tel" name ="telefone" id="telefone"  size="20" placeholder="digite seu telefone">
+            </label>
+            <p>
+                <label for="email">E-mail:
+                    <input type="email" name ="email" id="email"  placeholder="digite seu e-mail">
+                </label>
+            </p>
+            <p>
+                <label for="url">Senha:
+                    <input type="url" name ="url" id="url">
+                </label>
+            </p>
+            <p>
+                <label for="Nota">Nota:
+                    <input type="number" name ="nota" id="Nota" min="0" max="10" step="2">
+                </label>
+                <p>
+                Range <input type="range" name ="range" id="range" min="0" max="10" step="2"> </p>
+
+            <p> <label for= "data" > Data: </label> 
+            <input type="date" name ="data" id="data" min="2026-08-07"></p>
+
+            <p> <label for = "mes"> Mês: </label> 
+            <input type = "month" name ="mes" id="mes"></p>
+
+            <p> <label for = "semana"> Semana: </label> 
+            <input type = "week" name ="semana" id="semana"></p>
+
+            <p> <label for = "hora"> Hora: </label>
+            <input type ="time" name ="hora" id="hora" min="00:00" max="23:59"></p>
+    
+        
+        <input type = "submit" value="Enviar dados">
+        </p>
+
+        <p><label for = "data-hora">Data e Hora: </label>
+        <input type = "datetime-local" name ="data-hora" id="data-hora"></p>
+
+        <p><label for = "hidden">hidden: </label>
+        <input type = "hidden" name ="hidden" id="hidden">
+        </p>
+
+        <p> <label for = "senha" > Senha: </label> 
+        <input type = "password" name ="senha" id="senha">
+        </p>
+
+        <p> <label for = "arquivo" > Arquivo: </label> 
+        <input type = "file" name ="arquivo" id="arquivo">
+        </p>
+    </p>
+
+<p> <input type = "submit" value="Enviar dados"> 
+<button type = "button"> Executar função </button>
+</p>
+</form>
+<script>
+    function executarFuncao() {
+        alert("Função executada!");
+    }
+    </script>
+
+
+</body>
+</html>
