@@ -1,0 +1,48 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+p[title="Primeiro parágrafo"] {
+    color: red;
+}
+
+.exemplo {
+    color: purple;
+} */
+
+#exemplo2 {
+    color: orange;
+}
+
+
+input:focus {
+    background-color: yellow;
+}
+
+a:visited {
+    color: purple;
+}
+
+p::first-letter {
+    color: red;
+}
+
+div{width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+div::before {
+    content: "Antes do conteúdo";
+    color: red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aula16.css">
+</head>
+<body>
+    <h1 class="exemplo">Título da página</h1>
+    <h1>Título da página 2</h1>
+    <h1 id="exemplo2">Título da página 3</h1>
+    <h1 id="exemplo3">Título da página 4</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    </p>
+
+    <p title="Primeiro parágrafo">Texto do primeiro parágrafo</p>
+    <p class="dois">Texto do segundo parágrafo</p>
+    <p title="Terceiro parágrafo">Texto do terceiro parágrafo</p>
+    <p>Texto do quarto parágrafo</p>
+
+    <form action="">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+    </form>
+
+    <a href="um.html">link 1</a>
+    <a href="dois.html">link 2</a>
+    <a href="tres.html">link 3</a>
+
+    <a href="produtos.html" title="produtos">Produtos</a>
+    <br>
+    <div>   </div>
+
+    <script>
+        let exemplo2 = document.getElementById("exemplo2");
+        console.log(exemplo2);
+        let exemplo3 = document.getElementById("exemplo3");
+        console.log(exemplo3);
+
+        let exemplo = document.getElementsByClassName("exemplo");
+        console.log(exemplo);
+    </script>
+
+
+</body>
+</html>
