@@ -1,0 +1,19 @@
+body {
+    background-color: orangered;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: cornflowerblue;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+    background-color: dimgrey;
+    color: #cccccc
+    }
+    
+}
