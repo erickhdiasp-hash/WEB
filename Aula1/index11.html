@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .corAzul{
+            color: blue;
+        }
+
+        .corVermelha {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="n1">Número 1</label>
+            <input type="number" name="n1" id="n1">
+        </p>
+        <p>
+            <label for="n2">Número 2</label>
+            <input type="number" name="n2" id="n2">
+
+        </p>
+        <p>
+            <label for="r">Resultado</label>
+            <input type="number" name="r" id="r">
+        </p>
+        <p>
+            <button type="button" id="btnCalcular">Calcular</button>
+        </p>
+        <p>
+            <label for="m">Média: <span id="m"></span></label>
+        </p>
+    </form>
+
+    <script>
+        let btnCalcular = document.getElementById("btnCalcular");
+        btnCalcular.addEventListener("click", function(){
+            let n1 = parseFloat(document.getElementById("n1").value);
+            let n2 = parseFloat(document.getElementById("n2").value);
+            let s = n1 + n2;
+            let m = s / 2;
+            document.getElementById("r").value = s;
+            document.getElementById("m").innerHTML = m;
+            
+        if(m >= 6){
+            document.getElementById("m").classList.add("corAzul");
+            document.getElementById("m").classList.remove("corVermelha");
+
+        }else{
+            document.getElementById("m").classList.add("corVermelha");
+            document.getElementById("m").classList.remove("corAzul");
+            }
+        });
+    </script>
+    
+</body>
+</html>

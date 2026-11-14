@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="corBody">
+    <form action="">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <span id="nomeVazio" style="color:red"></span>
+        </p>
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+        </p>
+        <p>
+            <label for="opcao">Opção</label>
+            <select name=""opcao" id="opcao">
+            <option value="Item 1">Item 1</option>
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">Item 3</option>
+            <option value="Item 4">Item 4</option>
+            </select>
+        </p>
+
+
+        <p>
+            <button type="button" id="btnEnviarDados">Enviar Dados</button>
+            <button type="button" id="btnAlterarCor">Alterar cor</button>
+        </p>
+    </form>
+
+    <script>
+        let btnEnviarDados = document.getElementById("btnEnviarDados");
+        btnEnviarDados.addEventListener("click", function(){
+            let nome = document.getElementById("nome");
+            let nomeVazio = document.getElementById("nomeVazio");
+            if(nome.value == ""){
+                //alert("Preemcha o nome");
+                nomeVazio.innerHTML = "Preencha o nome";
+            }
+        });
+
+         let nome = document.getElementById("nome");
+        nome.addEventListener("keypress", function(){
+            document.getElementById("nomeVazio").innerHTML = "";
+        });
+
+        let btnAlterarCor = document.getElementById ("btnAlterarCor");
+        let corBody = document.getElementById("corBody");
+            btnAlterarCor.addEventListener("click", function(){
+                let cor = document.getElementById("cor").value;
+                corBody.style.backgroundColor = cor;
+
+            });
+
+            let cor = document.getElementById("cor");
+            cor.addEventListener("change", function(){
+                corBody.style.backgroundColor = cor.value;
+            });
+
+            let opcao = document.getElementById("opcao");
+            opcao.addEventListener("change", function(){
+            // alert("A opção foi alterada para " + opcao.value);
+            // });
+
+            let valorOpcao = document.querySelector ("#opcao").value;
+            alert("A opção foi alterada para " + valorOpcao);
+            })
+    </script>
+
+    
+</body>
+</html>
